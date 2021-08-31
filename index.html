@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='styles/cssreset.css' rel='stylesheet'>
+  <link href='styles/style.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id='title'>Evaluate This Project!</h1>
+    <p id='description'><em>Tell me what you think about this project</em></p>
+  </header>
+  <main>
+    <form id='survey-form'>
+      <div class='field-group'>
+        <label for='name' id='name-label'>Name</label>
+          <input id='name' name='name' type='text' placeholder='Enter your name' required>
+      </div>
+      <div class='field-group'>
+      <label for='email' id='email-label'>Email</label>
+        <input id='email' type='email' name='email' placeholder='Enter your email' required>
+      </div>
+        <div class='field-group'>
+          <label for='number' id='number-label'>Number of Pets <small>(Any information might prove useful.)</small></label>
+            <input id='number' type='number' name='pets' min=0 max=10 placeholder='This field is optional'>
+      </div>
+      <div class='field-group'>
+          <label for='dropdown'>Which option best describes you</label>
+          <select id='dropdown' name='level'>
+            <option value='not-selected' selected disabled>Please select an option</option>
+            <option value='newbie'>Newbie Dev</option>
+            <option value='intermediate'>Intermediate-level Dev</option>
+            <option value='skilled'>Skilled Dev</option>
+            <option value='master'>Something of a master</option>
+            <option value='god'>God</option>
+            <option value='taylor-swift'>I am to code what Taylor Swift is to music</option>
+          </select>
+     </div>
+      <div class='field-group'>
+        <p>What do you think of this design?</p>
+        <div class='radio-group'>
+          <div class='radio-option'>
+          <input id='bad' type='radio' name='score' value='bad' checked>
+          <label for='bad' class='inline-label'>It's bad.</label>
+          </div>
+          <div class='radio-option'>
+          <input id='mediocre' type='radio' name='score' value='mediocre'>
+          <label for='mediocre' class='inline-label'>Mediocre</label>
+          </div>
+          <div class='radio-option'>
+            <input id='good' type='radio' name='score' value='good'>
+            <label for='good' class='inline-label'>Good</label>
+          </div>
+          <div class='radio-option'>
+            <input id='masterful' type='radio' name='score' value='masterful'>
+            <label for='masterful' class='inline-label'>Masterful</label>
+          </div>
+          <div class='radio-option'>
+            <input id='folklore' type='radio' name='score' value='folklore'>
+            <label for='folklore' class='inline-label'>This is to Front-End what Folklore is to music.</label>
+          </div>
+        </div>
+      </div>
+      <div class='field-group'>
+        <p>What do you think needs improvement?<small>(Check all that apply)</small></p>
+        <div class='radio-group'>
+          <div class='radio-option'>
+            <input id='color' type='checkbox' name='improve' value='color'>
+            <label for='color' class='inline-label'>The color palette</label>
+          </div>
+          <div class='radio-option'>
+            <input id='layout' type='checkbox' name='improve' value='layout'>
+            <label for='layout' class='inline-label'>Layout <small>(alignments)</small></label>
+          </div>
+          <div class='radio-option'>
+            <input id='UI-UX' type='checkbox' name='improve' value='UI-UX'>
+            <label for='UI-UX' class='inline-label'>UI/UX</label>
+          </div>
+          <div class='radio-option'>
+            <input id='consistency' type='checkbox' name='improve' value='consistency'>
+            <label for=consistency class='inline-label'>Thematic consistency</label>
+          </div>
+          <div class='radio-option'>
+            <input id='creativity' type='checkbox' name='improve' value='creativity'>
+            <label for=creativity class='inline-label'>Design creativity</label>
+          </div>
+          <div class='radio-option'>
+            <input id='no-taylor' type='checkbox' name='improve' value='no-taylor'>
+            <label for=no-taylor class='inline-label'>Maybe fewer Taylor Swift references</label>
+          </div>
+        </div>
+      </div>
+      <div class='field-group'>
+        <label for='comment'>Any comments, suggestions, or Taylor Swift trivia?</label>
+        <textarea id='comment' rows='4'></textarea>
+      </div>
+      <div class='button-container'>
+        <button id='submit' type='submit'>Submit</button>
+      </div>
+    </form>
+  </main>
+  <div class='address'>
+    <p>Amir Kooshky</p>
+    <a href='https://github.com/kooshkya100' target='_blank'>
+      <img src='images/github.png' alt='GitHub'>
+    </a>
+    <a href='https://twitter.com/AKooshky' target='_blank'>
+      <img src='images/twitter.png' alt='Twitter'>
+    </a>
+    
+  </div>
+</body>
+</html>
